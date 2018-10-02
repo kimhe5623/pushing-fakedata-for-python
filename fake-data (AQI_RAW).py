@@ -24,7 +24,7 @@ for i in range(5000):
     data['SSN'] = 2
 
 
-    r = requests.post(url+token, data=data)
+    r = requests.post(url+token, json=data)
 
     if(i%100 == 0):
         print(r.json())
